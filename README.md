@@ -13,9 +13,9 @@ The summary statistics calculated from the real genomic data are in `vert_data.c
 The datasets with different dN/dS (omega) are designated as follows:
 * m1 - omega < 1 (negative selection)
 * m2 - omega = 1 (neutral sites)
-* m3 - omega = 1 (positive selection)
+* m3 - omega > 1 (positive selection)
 
-The script `senescence_ABC.R` uses the prior distribution to perform approximate Bayesian computations (ABC) to compare
+The script `senescence_ABC.R` uses the prior distributions to perform approximate Bayesian computations (ABC) to compare
 the prior models and to infer parameters for the data. The output are the posterior probability distributions for the parameters *k* (rate of
 the change of the current allele fitness) and *f* (the fraction of alleles under senescence or entrenchment).
 The data provided here will reproduce Fig. 5 from the preprint above.
